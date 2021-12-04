@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E743CEF275B563F0066E67E /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E743CEE275B563F0066E67E /* SoundPlayer.swift */; };
 		0E88344D275984BD0007B56A /* MyTimer1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88344C275984BD0007B56A /* MyTimer1App.swift */; };
 		0E88344F275984BD0007B56A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88344E275984BD0007B56A /* ContentView.swift */; };
 		0E883451275984BF0007B56A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E883450275984BF0007B56A /* Assets.xcassets */; };
 		0E883454275984BF0007B56A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E883453275984BF0007B56A /* Preview Assets.xcassets */; };
+		0E88345B275994760007B56A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88345A275994760007B56A /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E743CEE275B563F0066E67E /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		0E883449275984BD0007B56A /* MyTimer1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTimer1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E88344C275984BD0007B56A /* MyTimer1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer1App.swift; sourceTree = "<group>"; };
 		0E88344E275984BD0007B56A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E883450275984BF0007B56A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E883453275984BF0007B56A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E88345A275994760007B56A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				0E88344C275984BD0007B56A /* MyTimer1App.swift */,
 				0E88344E275984BD0007B56A /* ContentView.swift */,
+				0E743CEE275B563F0066E67E /* SoundPlayer.swift */,
+				0E88345A275994760007B56A /* SettingView.swift */,
 				0E883450275984BF0007B56A /* Assets.xcassets */,
 				0E883452275984BF0007B56A /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E88345B275994760007B56A /* SettingView.swift in Sources */,
 				0E88344F275984BD0007B56A /* ContentView.swift in Sources */,
+				0E743CEF275B563F0066E67E /* SoundPlayer.swift in Sources */,
 				0E88344D275984BD0007B56A /* MyTimer1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
