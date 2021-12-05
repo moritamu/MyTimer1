@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var count = 0//経過時間の変数
     @AppStorage("timer_value") var timerValue = 10//永続化する秒数変数
     @State var showAlert = false//アラート表示FL
+    let soundPlayer = SoundPlayer()
     var body: some View {
         NavigationView {//この中にNavigationViewの画面を構成する
             ZStack {
@@ -25,6 +26,7 @@ struct ContentView: View {
                     HStack{
                         Button(action: {
                             startTimer()//タイマーをスタートさせる
+                            soundPlayer.cymbalPlay()
                         }) {
                             Text("スタート")
                                 .font(.title)
@@ -63,12 +65,12 @@ struct ContentView: View {
             }//NavigationLink　destinationで設定画面
             )//.navigationBarItems
             .alert(isPresented: $showAlert) {
-                Alert(title: Text("終了"),
+                soundPlayer.guitarPlay()
+                return Alert(title: Text("終了"),
                       message: Text("タイマー終了時間です"),
                       dismissButton: .default(Text("OK")))
                 //ここで音を鳴らす
             }
-            
         }//NavigationView
     }//body
     func countDownTimer() {
