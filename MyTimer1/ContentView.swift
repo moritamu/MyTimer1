@@ -26,7 +26,7 @@ struct ContentView: View {
                     HStack{
                         Button(action: {
                             startTimer()//タイマーをスタートさせる
-                            soundPlayer.cymbalPlay()
+//                            soundPlayer.cymbalPlay()
                         }) {
                             Text("スタート")
                                 .font(.title)
